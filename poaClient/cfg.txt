@@ -1,0 +1,45 @@
+[Contracts]
+con1 = 4c62BcB0B7CFf596f93e40E1B095Fcd73e46d565
+
+[Web3]
+httpip = 127.0.0.1
+httpport = 8545
+
+[General]
+exist = 
+log = 81
+run = 1
+update = 0
+activecontract = 1
+sellprice = 20000
+sellrate = 1
+
+[pids]
+nohardware = 0
+hardware = 0
+
+[Geth Launch]
+datadir = node
+networkid = 23124
+extip = 10.20.30.18
+port = 30303
+httpport = 8545
+account = a239a1c05ad5cb0d2fdc5d5381d0014c3ee297a9
+pwfile = pwfile.txt
+gasprice = 0
+gaslimit = 999999999999
+minerthreads = 1
+mine = false
+gascap = 999999999999999
+txfeecap = 999999999999999
+
+[Kon]
+exist = ja
+pwm = 64
+multi = 1
+
+[Pro]
+exist = ja
+pwm = 0
+multi = 1
+
