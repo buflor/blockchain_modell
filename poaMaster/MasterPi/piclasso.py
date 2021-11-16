@@ -85,7 +85,7 @@ class PiClasso:
                 pass
       
     def syncTime(self):
-        self.apiAccess(self.defaultSSH, 'setTime('+str(time.time())+')')
+        self.blankAccess(self.defaultSSH,'sudo date -s @'+str(time.time()))
         
             
         
@@ -102,3 +102,8 @@ class PiClasso:
     
     def apiAccess(self, sshCon, command):
         stdin, stdout, stderr = sshCon.exec_command('cd '+SSHAPIDIR+'; python3 -c \'import api; api.'+command+'\'')
+        
+    def blankAccess(sshCon, command):
+        stdin, stdout, stderr = sshCon.exec_command(command)
+
+
