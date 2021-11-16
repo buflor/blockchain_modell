@@ -103,7 +103,7 @@ class PiClasso:
     def apiAccess(self, sshCon, command):
         stdin, stdout, stderr = sshCon.exec_command('cd '+SSHAPIDIR+'; python3 -c \'import api; api.'+command+'\'')
         
-    def blankAccess(sshCon, command):
+    def blankAccess(self, sshCon, command):
         stdin, stdout, stderr = sshCon.exec_command(command)
 
 
