@@ -16,12 +16,12 @@ PRNTPTH = str(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # Hardcoden der I2C-Adressen und Pins für PWM-Kontrolle
 
-# Consumer LCD Adressen
+# Consumer I2C Adressen
 ADDRCONINA = 0x40
 ADDRCONLCD = 0x27
 
 
-# Producer LCD Adressen
+# Producer I2C Adressen
 ADDRPROINA = 0x41
 ADDRPROLCD = 0x26
 
