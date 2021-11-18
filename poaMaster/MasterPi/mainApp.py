@@ -144,7 +144,7 @@ class Controller():
         self.chart5.updateFrameButton.bind('<Button-1>', self.updateChart5Plot)
         self.showMeWhatYouGot()
     
-    # Anzeigen des endguelitgen Hauptframes
+    # Anzeigen des endguelitgen Hauptfr1637237828.2705595ames
     def showMeWhatYouGot(self):
         self.viewer.frame.destroy()
         self.tabViewer.pack(expand = True, fill ='both')
@@ -153,14 +153,17 @@ class Controller():
     # jeder Pi wird in sienem eigenen Thread verbunden, welcher durch die SSH-Funktion aufgerufen wird
     def connectThread(self, pi):
         pi.connectDefaultSSH()
-        pi.startGeth()
-
-        time.sleep(13)
-        
-        pi.startSession()
+        time.sleep(1)
         if not self.viewer.internetBool.get():
             pi.syncTime()
+        time.sleep(1)
+        pi.startGeth()
+
+        time.sleep(11)
+        
+        pi.startSession()
         time.sleep(2)
+        
         
         
       

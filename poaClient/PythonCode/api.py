@@ -42,6 +42,8 @@ def endNoHardware():
     sendSig1To(cfg.get('pids','noHardware'))
 
 def startGeth():
+    os.system('sudo rm ~/Desktop/poaClient/node -r')
+    os.system('cp ~/Desktop/poaClient/vault/node -r  ~/Desktop/poaClient')
     
     cnfg = configparser.ConfigParser()
     cnfg.read(CFGFILE)
