@@ -26,6 +26,7 @@ ADDRPROINA = 0x41
 ADDRPROLCD = 0x26
 
 # Consumer Pins
+
 CONPWM = 16 # => ENA
 CONIN1 = 20 # => IN1
 CONIN2 = 21 # => In2
