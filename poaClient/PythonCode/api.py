@@ -44,7 +44,7 @@ def endNoHardware():
 def startGeth():
     os.system('sudo rm ~/Desktop/poaClient/node -r')
     os.system('cp ~/Desktop/poaClient/vault/node -r  ~/Desktop/poaClient')
-    
+    time.sleep(1)
     cnfg = configparser.ConfigParser()
     cnfg.read(CFGFILE)
     
