@@ -23,6 +23,7 @@ def testEmAll():
     md2Test(20, 21, 16)
     # produrcer MD2 test
     md2Test(13, 19, 26)
+    print("done")
         
     
 def inaTest(addr):
